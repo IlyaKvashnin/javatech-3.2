@@ -26,11 +26,24 @@
                 </td>
                 <td></td>
                 <td>
-                    <div>${Files.getAttribute(directory.toPath(),"lastModifedTime").toString()}</div>
+                    <div>${Files.getAttribute(directory.toPath(),"lastModifiedTime").toString()}</div>
                 </td>
             </tr>
         </c:forEach>
     </form>
+    <c:forEach var="file" items="${files}">
+        <tr>
+            <td>
+                <div>${file.getPath()}</div>
+            </td>
+            <td>
+                <div>${Files.size(file.toPath())}</div>
+            </td>
+            <td>
+                <div>${Files.getAttribute(file.toPath(), "lastModifiedTime").toString()}</div>
+            </td>
+        </tr>
+    </c:forEach>
     </tbody>
 </table>
 </body>

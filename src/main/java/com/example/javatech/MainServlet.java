@@ -56,7 +56,6 @@ public class MainServlet extends HttpServlet {
                         files.add(f);
                 }
             }
-
             req.setAttribute("directories", directories);
             req.setAttribute("files", files);
         }
