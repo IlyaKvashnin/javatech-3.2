@@ -5,7 +5,10 @@
     <title>Main</title>
 </head>
 <body>
+
 <p>${dateTime}</p>
+<h1>${path}</h1>
+<hr>
 
 <table>
     <thead>
@@ -16,25 +19,33 @@
     </tr>
     </thead>
     <tbody>
-    <form action="./files" method="get">
-        <c:forEach var="directory" items ="${directories}">
-            <tr>
-                <td>
-                    <button type="submit" name="path" value="${directory.getAbsolutePath()}">
-                        <div>${directory.getName()}/</div>
-                    </button>
-                </td>
-                <td></td>
-                <td>
-                    <div>${Files.getAttribute(directory.toPath(),"lastModifiedTime").toString()}</div>
-                </td>
-            </tr>
-        </c:forEach>
-    </form>
+
+    <c:forEach var="directory" items ="${directories}">
+        <tr>
+            <td>
+                <div>
+                    <img src='<c:url value="${pageContext.request.contextPath}/images/folder.png"></c:url>' style="height:20px;width:20px"/>
+                    <a href="files?path=${directory.getAbsolutePath().replace('/','%2F')}">${directory.getName()}</a>
+                </div>
+            </td>
+            <td>
+                <div>
+
+                </div>
+            </td>
+            <td>
+                <div>${Files.getAttribute(directory.toPath(),"lastModifiedTime").toString()}</div>
+            </td>
+        </tr>
+    </c:forEach>
+
     <c:forEach var="file" items="${files}">
         <tr>
             <td>
-                <div>${file.getPath()}</div>
+                <div>
+                    <img src='<c:url value="${pageContext.request.contextPath}/images/file.png"></c:url>' style="height:20px;width:20px"/>
+                    ${file.getPath()}
+                </div>
             </td>
             <td>
                 <div>${Files.size(file.toPath())}</div>
@@ -44,6 +55,7 @@
             </td>
         </tr>
     </c:forEach>
+
     </tbody>
 </table>
 </body>

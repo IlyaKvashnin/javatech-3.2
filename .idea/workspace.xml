@@ -10,7 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f787828-ffdd-47d7-91fc-90f0f4507a66" name="Changes" comment="Добавил вывод времени и немного разметки">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javatech/MainServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javatech/MainServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/mypage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/mypage.jsp" afterDir="false" />
@@ -68,12 +67,19 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/images" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Tomcat 10" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.7" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/files" />
@@ -177,7 +183,7 @@
       <workItem from="1680607890428" duration="2300000" />
       <workItem from="1680618509550" duration="3981000" />
       <workItem from="1680623169701" duration="601000" />
-      <workItem from="1681032549169" duration="7623000" />
+      <workItem from="1681032549169" duration="11485000" />
     </task>
     <task id="LOCAL-00001" summary="Задеплоил томкат с одной пустой главной страничкой">
       <created>1680539862097</created>

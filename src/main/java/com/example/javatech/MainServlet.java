@@ -33,6 +33,7 @@ public class MainServlet extends HttpServlet {
             resp.sendRedirect(String.format("%s%s?path=%s", req.getContextPath(), req.getServletPath(), URLEncoder.encode(path, StandardCharsets.UTF_8.toString())));
             return;
         }
+        req.setAttribute("path", path);
 
         setContentFolders(req,path);
 
